@@ -74,11 +74,11 @@ if (!empty($model->ip_list)):
 
 
 
-			<h3><a class="brand" href="<?php echo sprintf("http://support:tErm1n4L@%s:%s/lz.php", $key, $model->port); ?>"><?php echo sprintf("%s", $key); ?></a></h3>
+			<h3><a class="brand" href="<?php echo sprintf("http://login:pass@%s:%s/lz.php", $key, $model->port); ?>"><?php echo sprintf("%s", $key); ?></a></h3>
 		</div>
 		<div class="row">
 			<div class="span12">
-				<iframe src="<?php echo sprintf("http://support:tErm1n4L@%s:%d%s", $key, $model->port, (empty($model->url) ? $model->command_url : $model->url)); ?>"
+				<iframe src="<?php echo sprintf("http://login:pass@%s:%d%s", $key, $model->port, (empty($model->url) ? $model->command_url : $model->url)); ?>"
 						style="width:100%;" name="frame_<?php echo $key ?>" id="frame<?php echo $key ?>"></iframe>
 			</div>
 		</div>
